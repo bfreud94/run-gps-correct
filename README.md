@@ -11,3 +11,11 @@
 3. Filter the GPX file for all lines that contain coordinates, line 36 in index.js specifies that includes `<trkpt`
 4. The variable `replacementLimit` specifies the first n coordinates to be replaced. By setting it to half of the amount of GPS coordinates, the algorithm replaces the entire first half of the file. This variable can be modified to any number of coordinates, as long as that number is less than half of the coordinates in the file
 5. Overwrite lines with new coordinates
+
+## Example ##
+
+### Before ###
+<img width="1792" alt="Screen Shot 2022-02-20 at 11 43 51 AM" src="https://user-images.githubusercontent.com/7871987/154854926-bde78306-b966-401b-938d-943a44d436c1.png">
+
+### After ###
+<img width="1792" alt="Screen Shot 2022-02-20 at 11 44 44 AM" src="https://user-images.githubusercontent.com/7871987/154854936-b077f90a-c711-443a-90f5-cd16bb70a419.png">
