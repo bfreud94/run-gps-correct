@@ -12,6 +12,10 @@
 4. The variable `replacementLimit` specifies the first n coordinates to be replaced. By setting it to half of the amount of GPS coordinates, the algorithm replaces the entire first half of the file. This variable can be modified to any number of coordinates, as long as that number is less than half of the coordinates in the file
 5. Overwrite lines with new coordinates
 
+## Known Issues ##
+### Garmin vs. Strava ###
+1. This software will always work for runs uploaded to Garmin, as opposed to uploading them to Strava. This is because Strava has a statistic called `Moving Time`, which is the "default" time (as shown in the run overview) and `Elapsed Time`, which is the total amount of time spent on the run. These metrics are not in the gpx file, but rather created by Strava's engine. It calculates the `Moving Time` from the gpx file, and uses the total time (which is the correct metric showed in the overview on Garmin) as the `Elapsed Time`. At this time, there are no resolutions to this issue.
+
 ## Example ##
 
 ### Before ###
