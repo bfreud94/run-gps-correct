@@ -3,3 +3,6 @@
 
 # Mac files
 .DS_store
+
+# Runs
+/src/runs/
