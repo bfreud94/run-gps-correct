@@ -61,6 +61,8 @@ const replacementAlgorithm = (path) => {
 
     console.log('Successfully modified run!')
 
+    rl.close()
+
 }
 
 main()
